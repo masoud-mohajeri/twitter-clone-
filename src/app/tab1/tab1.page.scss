@@ -1,0 +1,21 @@
+ion-header::after {
+  // background-image: none;
+  // border-bottom: 1px solid var(--ion-color-medium-twitter);
+}
+
+ion-slides {
+  padding: 5px 0 5px 8px;
+  border-bottom: 1px solid var(--ion-color-medium-twitter);
+}
+
+ion-segment {
+  z-index: 10;
+  text-transform: none;
+}
+
+ion-avatar {
+  img {
+    border: 2px solid var(--ion-color-primary);
+    padding: 2px;
+  }
+}

@@ -1,0 +1,40 @@
+ion-header {
+  .sc-ion-searchbar-ios-h {
+    padding-top: 1px;
+    padding-bottom: 0px;
+  }
+  ion-grid {
+    ion-row {
+      ion-col {
+        display: flex;
+        align-content: center;
+      }
+    }
+  }
+}
+
+ion-segment-button {
+  p {
+    font-weight: bold;
+    font-size: 90%;
+  }
+}
+
+.slide {
+  width: 200px;
+  height: 256px;
+  border: 1px solid var(--ion-color-medium-twitter);
+  border-radius: 10px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  ion-button {
+    font-size: 70%;
+    --padding-bottom: 0;
+  }
+  .avatar {
+    display: flex;
+    justify-content: center;
+  }
+}

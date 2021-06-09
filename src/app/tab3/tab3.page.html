@@ -1,17 +1,95 @@
-<ion-header [translucent]="true">
+<ion-header mode="md">
   <ion-toolbar>
-    <ion-title>
-      Tab 3
-    </ion-title>
+    <ion-grid fixed class="ion-no-padding">
+      <ion-row>
+        <ion-col size="2" class="ion-align-items-center">
+          <ion-button (click)="openMenu()" size="small" fill="clear">
+            <ion-icon slot="icon-only" name="menu"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size="8" class="ion-align-items-center">
+          <h3 style="margin: 3px">Notifications</h3>
+        </ion-col>
+        <ion-col size="2" class="ion-align-items-center">
+          <ion-button size="small" fill="clear">
+            <ion-icon slot="icon-only" name="settings"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-segment value="All" mode="md">
+      <ion-segment-button value="All">
+        <ion-label>All</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="Mentions">
+        <ion-label>Mentions</ion-label>
+      </ion-segment-button>
+    </ion-segment>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 3</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <app-explore-container name="Tab 3 page"></app-explore-container>
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="mail"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <!--  -->
+  <ion-grid fixed>
+    <ion-row *ngFor="let tweet of tweets" class="ion-row-border">
+      <ion-col
+        class="need-padding"
+        size="2"
+        style="display: flex; justify-content: end"
+      >
+        <div *ngIf="tweet.type === 'like'">
+          <ion-icon
+            slot="icon-only"
+            size="large"
+            name="heart"
+            color="danger"
+          ></ion-icon>
+        </div>
+        <div *ngIf="tweet.type === 'retweet'">
+          <ion-icon
+            slot="icon-only"
+            size="large"
+            name="repeat"
+            color="success"
+          ></ion-icon>
+        </div>
+      </ion-col>
+      <ion-col class="need-padding" size="10">
+        <ion-row>
+          <ion-col size="12">
+            <ion-avatar>
+              <img [src]="'../../assets/images/'+tweet.img" />
+            </ion-avatar>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-text color="dark" style="display: flex; flex-wrap: nowrap">
+              <h5>{{tweet.username}}</h5>
+              <p style="margin-left: 5px" *ngIf="tweet.type === 'retweet'">
+                Retweeted your tweet
+              </p>
+              <p style="margin-left: 5px" *ngIf="tweet.type === 'like'">
+                liked your tweet
+              </p>
+            </ion-text>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col size="12">
+            <ion-text color="medium">
+              <p>{{tweet.text | slice:0:150}}...</p>
+            </ion-text>
+          </ion-col>
+        </ion-row>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

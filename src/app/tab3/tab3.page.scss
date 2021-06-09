@@ -1,0 +1,20 @@
+ion-header::after {
+  // background-image: none;
+  // border-bottom: 1px solid var(--ion-color-medium-twitter);
+  border-bottom: 1px solid #fff;
+}
+ion-row {
+  .need-padding {
+    padding: 10px;
+  }
+}
+
+p,
+h5 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.ion-row-border {
+  border-bottom: 1px solid var(--ion-color-medium-twitter);
+}
