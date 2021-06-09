@@ -1,0 +1,48 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-grid fixed class="ion-no-padding">
+      <ion-row>
+        <ion-col size="2" class="ion-align-items-center">
+          <ion-button (click)="openMenu()" size="small" fill="clear">
+            <ion-icon slot="icon-only" name="menu"></ion-icon>
+          </ion-button>
+        </ion-col>
+        <ion-col size="8" class="ion-align-items-center">
+          <h3 style="margin: 3px">Messages</h3>
+        </ion-col>
+        <ion-col size="2" class="ion-align-items-center">
+          <ion-button size="small" fill="clear">
+            <ion-icon slot="icon-only" name="settings"></ion-icon>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!-- fab -->
+  <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+    <ion-fab-button>
+      <ion-icon name="mail"></ion-icon>
+    </ion-fab-button>
+  </ion-fab>
+  <!-- list -->
+  <ion-list mode="ios" lines="full">
+    <ion-item *ngFor="let tweet of tweets">
+      <ion-avatar slot="start">
+        <img [src]="'../../assets/images/'+tweet.img" />
+      </ion-avatar>
+      <ion-label>
+        <div style="display: flex; flex-wrap: nowrap">
+          <h2 style="display: block; font-weight: 500">{{tweet.username}}</h2>
+          <ion-text color="medium">
+            <h2 style="display: block; margin-left: 5px">@{{tweet.handle}}</h2>
+          </ion-text>
+        </div>
+
+        <p>{{tweet.text}}</p>
+      </ion-label>
+    </ion-item>
+  </ion-list>
+</ion-content>

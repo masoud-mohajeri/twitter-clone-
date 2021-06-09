@@ -1,0 +1,119 @@
+{
+  "tweets": [
+    {
+      "type": "like",
+      "username": "Marcio Frayze",
+      "handle": "MarcioFrayze",
+      "like": 446,
+      "retweets": 173,
+      "response": 21,
+      "text": "Implementing a simple state machine library in JavaScript, by ",
+      "date": "1581322823",
+      "liked": true,
+      "retweet": false,
+      "attachment": "img2.jpg",
+      "img": "img1.jpg"
+    },
+    {
+      "type": "retweet",
+
+      "username": "Brad Traversy",
+      "handle": "traversymedia",
+      "like": 14,
+      "retweets": 2,
+      "response": 6,
+      "liked": true,
+      "retweet": true,
+      "text": "Prathum writes some of the nicest, most helpful cheat sheets that I’ve ever seen. He also offers a lot of high quality content here on Twitter. Check out his ebook if you haven’t already",
+      "date": "1600874423",
+      "img": "img3.jpg"
+    },
+    {
+      "type": "retweet",
+
+      "username": "ionic",
+      "handle": "ionicframework",
+      "like": 1337,
+      "retweets": 529,
+      "response": 36,
+      "liked": false,
+      "retweet": true,
+      "text": "🎉 Ionic Vue is (finally) here!<br>Truly native, truly web, truly cross platform<br><br>Built with @vuejs 3.0<br>Standard Vue tooling w/ vue-router<br>100+ mobile UI components<br>Mobile phone iOS, Android, and PWAs<br><br>Give it a spin 👇",
+      "link": "https://ionicframework.com/blog/announcing-ionic-vue/",
+      "date": "1602793223",
+      "img": "img4.jpg"
+    },
+    {
+      "type": "retweet",
+
+      "username": "Angular",
+      "handle": "angular",
+      "like": 1337,
+      "retweets": 529,
+      "response": 36,
+      "liked": false,
+      "retweet": true,
+      "text": "❗Attention Devs: BooksThe Google Developers Library is officially open. Share open source examples, provide feedback and connect with the community.Submit your favorite project →  http://devlibrary.withgoogle.com #DevelopWithGoogle",
+      "date": "1602793223",
+      "img": "img5.jpg"
+    },
+    {
+      "type": "like",
+
+      "username": "Marcio Frayze",
+      "handle": "MarcioFrayze",
+      "like": 446,
+      "retweets": 173,
+      "response": 21,
+      "text": "Implementing a simple state machine library in JavaScript, by ",
+      "date": "1581322823",
+      "liked": true,
+      "retweet": false,
+      "attachment": "img2.jpg",
+      "img": "img1.jpg"
+    },
+    {
+      "type": "like",
+
+      "username": "Brad Traversy",
+      "handle": "traversymedia",
+      "like": 14,
+      "retweets": 2,
+      "response": 6,
+      "liked": true,
+      "retweet": true,
+      "text": "Prathum writes some of the nicest, most helpful cheat sheets that I’ve ever seen. He also offers a lot of high quality content here on Twitter. Check out his ebook if you haven’t already",
+      "date": "1600874423",
+      "img": "img3.jpg"
+    },
+    {
+      "type": "retweet",
+
+      "username": "ionic",
+      "handle": "ionicframework",
+      "like": 1337,
+      "retweets": 529,
+      "response": 36,
+      "liked": false,
+      "retweet": true,
+      "text": "🎉 Ionic Vue is (finally) here!<br>Truly native, truly web, truly cross platform<br><br>Built with @vuejs 3.0<br>Standard Vue tooling w/ vue-router<br>100+ mobile UI components<br>Mobile phone iOS, Android, and PWAs<br><br>Give it a spin 👇",
+      "link": "https://ionicframework.com/blog/announcing-ionic-vue/",
+      "date": "1602793223",
+      "img": "img4.jpg"
+    },
+    {
+      "type": "like",
+
+      "username": "Angular",
+      "handle": "angular",
+      "like": 1337,
+      "retweets": 529,
+      "response": 36,
+      "liked": false,
+      "retweet": true,
+      "text": "❗Attention Devs: BooksThe Google Developers Library is officially open. Share open source examples, provide feedback and connect with the community.Submit your favorite project →  http://devlibrary.withgoogle.com #DevelopWithGoogle",
+      "date": "1602793223",
+      "img": "img5.jpg"
+    }
+  ]
+}
